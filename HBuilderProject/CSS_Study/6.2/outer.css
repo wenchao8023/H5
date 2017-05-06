@@ -1,0 +1,10 @@
+table {
+  background-color: darkcyan;
+  width: 400px;
+}
+td {
+  background-color: yellow;
+  font-family: "微软雅黑";
+  font-size: 20pt;
+  text-shadow: 2px 2px 2px red;
+}
