@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> ID 选择器</title>
+		<style type="text/css">
+			/* 对所有 div 元素都起作用的 CSS 样式 */
+			div {
+				width: 200px;
+				height: 30px;
+				background-color: #DDDDDD;
+				padding: 3px;
+				margin: 10px;
+			}
+			/* 对 id 为 xx 的元素都起作用的 CSS 样式 */
+			/*#xx {
+				border: 2px dotted black;
+				background-color: #888;
+			}*/
+			
+			/* 仅对 id 为 xx 的 p 元素都起作用的 CSS 样式 */
+			p#xx {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>没有任何属性的 div 元素</div>
+		<div id="xx">
+			id 属性值为 xx 的 div 元素
+		</div>
+		<input type="text" name="" id="xx" value="id 属性值为 xx 的 input 元素" style="width: 250px;text-align: center;"/>
+		<p id="xx" style="width: 400px;text-align: center;">仅对 id 为 xx 的 p 元素都起作用的 CSS 样式</p>
+	</body>
+</html>

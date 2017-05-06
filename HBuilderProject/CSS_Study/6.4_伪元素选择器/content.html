@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> content + :before </title>
+		<style type="text/css">
+			/* 指定向 div 元素内部的前端插入 content 属性对应的内容 */
+			div>div:before {
+				content: 'CrazyIt: ';
+				color: red;
+				font-weight: bold;
+				background-color: black;
+				margin: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div>疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>

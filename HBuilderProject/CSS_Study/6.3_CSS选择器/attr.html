@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 属性选择器 </title>
+		<style type="text/css">
+			/* 对所有 div 元素都起作用的 CSS 样式 */
+			div {
+				width: 300px;
+				height: 30px;
+				background-color: #EEEEEE;
+				border: 1px solid black;
+				padding: 10px;
+			}
+			
+			/* 对有 id 属性的 div 元素起作用的 CSS 样式 */
+			div[id] {
+				background-color: #AAAAAA;
+			}
+			
+			/* 对有 id 属性值包含 xx 的 div 元素起作用的 CSS 样式 */
+			div[id*=xx] {
+				background-color: #999999;
+			}
+			
+			/* 对有 id 属性值以 xx 开头的 div 元素起作用的 CSS 样式 */
+			div[id^=xx] {
+				background-color: #555;
+				color: #DDDDDD;
+			}
+			
+			/* 对有 id 属性值等于 xx 的 div 元素起作用的 CSS 样式 */
+			div[id=xx] {
+				background-color: #111;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			没有任何属性的 div 元素
+		</div>
+		<div id="a">
+			带 id 的 div 元素
+		</div>
+		<div id="zzxx">
+			id 属性值为包含 xx 的 div 元素
+		</div>
+		<div id="xxyy">
+			id 属性值为以 xx 开头的 div 元素
+		</div>
+		<div id="xx">
+			id 属性值为 xx 的 div 元素
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>:first-line</title>
+		<style type="text/css">
+			.bord {
+				border: 1px solid black;
+				margin: 4px;
+				background-color: lightblue;
+			}
+			span {
+				display: block;
+			}
+			span:first-line {
+				color: #FF0000;
+				font-size: 20pt;
+			}
+			section:first-line {
+				color: #00FF00;
+				font-size: 30pt;
+			}
+			p:first-line {
+				color: #0000FF;
+				font-size: 30pt;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="bord">abc <br />xyz</span>
+		<section class="bord">去年今日此门中， <br />
+			人面桃花相印红。
+		</section>
+		<p style="width: 160px;" class="bord">疯狂 Java 讲义</p>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 组合选择器 </title>
+		<style type="text/css">
+			/* 对 div 元素、class 属性为 a 的元素、id 为 abc 的元素都起作用的 CSS 样式 */
+			div, .a, #abc {
+				width: 200px;
+				height: 40px;
+				border: 2px dotted red;
+				background-color: black;
+				color: white;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>没有任何属性的 div 元素</div>
+		<p class="a">class 属性为 a 的 p 元素</p>
+		<section id="abc">id 为 abc 的 section 元素</section>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 多级编号 </title>
+		<style type="text/css">
+			div>h2 {
+				counter-increment: categoryCounter;
+				counter-reset: subCounter;	/* 使用 counter-reset 重置 subcounter，这样在 二级菜单中 subcounter 每次都会是从第一个开始 */
+			}
+			div>div {
+				counter-increment: subCounter;
+			}
+			div>h2:before {
+				content: counter(categoryCounter, upper-roman) '.';
+				font-size: 20pt;
+				font-weight: bold;
+				margin-right: 10px;
+			}
+			div>div:before {
+				content: '第' counter(subCounter, cjk-ideographic) '本';
+				font-size: 14pt;
+				font-weight: bold;
+				margin-left: 34px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>疯狂 Java 体系图书</h2>
+			<div>疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div>疯狂 Ajax 讲义</div>
+			<h2>其他体系图书</h2>
+			<div>Struts 2.1 权威指南</div>
+			<div>JavaScript 权威指南</div>
+		</div>
+	</body>
+</html>

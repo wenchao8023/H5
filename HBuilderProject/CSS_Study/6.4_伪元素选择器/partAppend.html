@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> new Document </title>
+		<style type="text/css">
+			/* 指定向 class 属性为 no 的 div 元素内部的尾端插入 content 属性对应的内容 */
+			div>div.no:after {
+				content: url("../img/buy.gif");
+				margin-left: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="no">疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div class="no">疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>

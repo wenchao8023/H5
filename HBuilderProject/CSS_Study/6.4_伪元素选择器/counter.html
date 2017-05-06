@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 添加编号counter </title>
+		<style type="text/css">
+			/* 为 div 的子 div 定义一个计数器：mycounter */
+			div>div {
+				counter-increment: mycounter;
+			}
+			/* 在 div 的子 div 元素的前端插入 mycounter 计数器和一个点 */
+			div>div:before {
+				content: counter(mycounter) '.';
+				font-size: 20pt;
+				color: red;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="no">疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div class="no">疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>

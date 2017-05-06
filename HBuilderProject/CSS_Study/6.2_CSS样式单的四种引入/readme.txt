@@ -1,4 +1,4 @@
-（一） CSS表单的基本使用
+（二） CSS表单的基本使用
 1. 引入外部样式文件
 	格式：<link href="CSS 样式文件的路径" rel="stylesheet" type="text/css" />
 	例子：<link href="outer.css" rel="stylesheet" type="text/css" /> 引入同目录下的 outer.css 样式文件

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>:first-letter</title>
+		<style type="text/css">
+			span {
+				display: block;
+			}
+			
+			/* span 的第一个字母加粗、变红 
+			 * 由于 span 是内联元素，因此需要先把 span 的 display 设为 block 
+			 */
+			span:first-letter {
+				color: red;
+				font-size: 20pt;
+			}
+			
+			/* section 的第一个字母加粗、变蓝 */
+			section:first-letter {
+				color: blue;
+				font-size: 20pt;
+			} 
+			
+			/* p 的第一个字母加粗、变蓝 */
+			p:first-letter {
+				color: blue;
+				font-size: 20pt;
+			}
+		</style>
+	</head>
+	<body>
+		<span>abc</span>
+		<section>其实我是写iOS的</section>
+		<p>疯狂Java讲义</p>
+	</body>
+</html>

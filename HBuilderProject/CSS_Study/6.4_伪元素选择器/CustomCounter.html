@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 自定义编号 </title>
+		<style type="text/css">
+			div>div {
+				counter-increment: mycounter;
+			}
+			div>div:before {
+				content: counter(mycounter, circle) '第' counter(mycounter, upper-roman) '本';
+				font-size: 20pt;
+				font-weight: bold;
+				margin-right: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="no">疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div class="no">疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> content + :after </title>
+		<style type="text/css">
+			/* 指定向 div 元素内部的尾端插入 content 属性对应的内容 */
+			div>div:after {
+				content: url("../img/wjc.gif");		/* 添加 wjc.gif 图片 */
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div>疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>

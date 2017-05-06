@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> child </title>
+		<style type="text/css">
+			/* 定义对为其父元素的第 1 个子节点的 li 元素起作用的 CSS 样式 */
+			li:first-child {
+				border: 1px solid black;	
+			}
+			/* 定义对为其父元素的最后一个子节点的 li 元素起作用的 CSS 样式 */
+			li:last-child {
+				background-color: #AAAAAA;
+			}
+			/* 定义对为其父元素的第 2 个子节点的 li 元素起作用的 CSS 样式 */
+			li:nth-child(2) {
+				color: #888888;
+			}
+			/* 定义对为其父元素的倒数第 2 个子节点的 li 元素起作用的 CSS 样式 */
+			li:nth-last-child(2) {
+				font-weight: bold;	
+			}
+			/* 定义对为其父元素的唯一一个子节点的 li 元素起作用的 CSS 样式 */
+			li:only-child {
+				font-size: 30pt;
+				font-family: "微软雅黑";	
+			}
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>www.crazyit.ort</li>
+			<li>www.fkjava.org</li>
+			<li>www.facejava.ort</li>
+			<li>疯狂 Java 联盟</li>
+			<li>疯狂软件教育中心</li>
+		</ol>
+		<ul>
+			<li id="java">疯狂 Java 讲义</li>
+			<li id="javaee">轻量级 Java EE 企业应用实战</li>
+			<li id="ajax">疯狂 Ajax 讲义</li>
+			<li id="xml">疯狂 XML 讲义</li>
+			<li id="ejb">经典 Java EE 企业应用实战</li>
+			<li> <span id="android">疯狂 Android 讲义</span></li>
+		</ul>
+		<span>疯狂 Java 联盟</span>
+	</body>
+</html>

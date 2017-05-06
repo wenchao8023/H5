@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>子选择器</title>
+		<style type="text/css">
+			/* 对所有 div 元素都起作用的 CSS 样式 */
+			div {
+				width: 400px;
+				height: 60px;
+				background-color: #DDDDDD;
+				margin: 5px;
+			}
+			/* 对处于 div 之内且 class 属性为 a 的元素起作用的 CSS 样式 */
+			div>.a {
+				width: 300px;
+				height: 40px;	
+				border: 2px dotted black;
+				background-color: #888;
+			}
+		</style>
+	</head>
+	<body>
+		<div>没有任何属性的 div 元素</div>
+		<div>
+			<p class="a">
+				class 属性为 a 且是 div 子节点的元素
+			</p>
+		</div>
+		<div>
+			<section>
+				<p class="a">
+				class 属性为 a 且处于 div 内部，但不是直接子节点的元素
+			</p>
+			</section>
+		</div>
+	</body>
+</html>

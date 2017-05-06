@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 添加符号quote </title>
+		<style type="text/css">
+			/* 定义 open-quote: <<, close-quote: >> */
+			div>div {
+				quotes: "<<" ">>";
+			}
+			/* 指定 div 的子 div 前端插入 open-quote */
+			div>div:before {
+				content: open-quote;
+			}
+			/* 指定 div 的子 div 尾端插入 close-quote */
+			div>div:after {
+				content: close-quote;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="no">疯狂 Java 讲义</div>
+			<div>疯狂 Android 讲义</div>
+			<div class="no">疯狂 Ajax 讲义</div>
+		</div>
+	</body>
+</html>
